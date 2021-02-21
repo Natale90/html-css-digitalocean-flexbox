@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-size: 16px;
+}
+
 [class*="col"]{
   border:1px solid yellow;
 }
@@ -19,9 +23,15 @@ section{
   padding: 30px 0;
 }
 
+li{
+  list-style-type: none;
+}
+
 .personal_container{
-  width: 1170px;
+  max-width: 1170px;
   margin:auto;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 
@@ -87,6 +97,17 @@ nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
   color:white;
 }
 
+.ham{
+  display:none;
+  font-size: 2.5rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.ham:hover{
+  background-color: blue;
+  color:#fff;
+}
 
 /* this set rules the JUMBOTRON behavior */
 .jumbo_left{
@@ -97,14 +118,12 @@ nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
   margin: 20px 0;
 }
 
-
-
 .jumbo_right{
   text-align: center;
   padding: 10px 20px;
 }
 
-.jumbo_right h3:last-child{
+.jumbo_right h3:nth-child(2){
   font-weight: bold;
   color:blue;
 }
@@ -141,8 +160,17 @@ nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
   text-align: center;
 }
 
-.custolers_logo{
+.customers_logo {}
+
+.customers_logo ul{
   display: flex;
+  max-width: 100%;
   justify-content: space-between;
   margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.customers_logo ul li{
+  min-width: calc((100% / 6) - 20px);
+  margin: 0 10px;
 }
