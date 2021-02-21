@@ -1,0 +1,148 @@
+/* GENERAL WEBPAGE INSTRUCTION */
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[class*="col"]{
+  border:1px solid yellow;
+}
+
+section, header{
+  border: 3px dotted red;
+}
+
+section{
+  padding: 30px 0;
+}
+
+.personal_container{
+  width: 1170px;
+  margin:auto;
+}
+
+
+
+/* This section rules the NAVBAR behavior */
+nav{
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid black;
+}
+
+nav img{
+  max-width: 200px;
+  height: auto;
+}
+
+nav ul li{
+  list-style-type: none;
+  display:inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+nav ul li a i{
+  vertical-align: middle;
+}
+
+nav ul:first-of-type li:first-child:hover .dropdown,
+nav ul:first-of-type li:nth-of-type(3):hover .dropdown,
+nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
+  display:block;
+}
+
+.dropdown{
+  position: absolute;
+  margin-top: 23px;
+  display: none;
+  background-color: #f4f4f4;
+  z-index: 999;
+}
+
+.dropdown li{
+  width: 100px;
+  display: block;
+  padding: 10px 5px;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.dropdown li:hover{
+  background-color: grey;
+
+}
+
+.dropdown li:hover a{
+  color:white;
+}
+
+
+/* this set rules the JUMBOTRON behavior */
+.jumbo_left{
+  padding: 10px 20px;
+}
+
+.jumbo_left p{
+  margin: 20px 0;
+}
+
+
+
+.jumbo_right{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.jumbo_right h3:last-child{
+  font-weight: bold;
+  color:blue;
+}
+
+
+.jumbo_right input{
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  padding: 8px 5px;
+}
+
+.jumbo_right button{
+  width: 100%;
+  padding: 8px 0;
+  position: relative;
+}
+
+.jumbo_right button img{
+  height: 32px;
+  width: auto;
+  position: absolute;
+  left: 8px;
+  top:50%;
+  transform: translate(0, -50%);
+}
+
+/* this set rules the CUSTOMERS section behavior */
+#customers{
+  background-color: #f3f3f3;
+}
+
+.personal_container{
+  text-align: center;
+}
+
+.custolers_logo{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
