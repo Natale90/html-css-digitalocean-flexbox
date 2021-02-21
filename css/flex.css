@@ -23,6 +23,11 @@ section{
   padding: 30px 0;
 }
 
+.section_title{
+  text-align: center;
+  padding: 20px 0;
+}
+
 li{
   list-style-type: none;
 }
@@ -154,13 +159,8 @@ nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
 /* this set rules the CUSTOMERS section behavior */
 #customers{
   background-color: #f3f3f3;
-}
-
-.personal_container{
   text-align: center;
 }
-
-.customers_logo {}
 
 .customers_logo ul{
   display: flex;
@@ -173,4 +173,20 @@ nav ul:nth-of-type(2) li:nth-of-type(2):hover .dropdown{
 .customers_logo ul li{
   min-width: calc((100% / 6) - 20px);
   margin: 0 10px;
+}
+
+
+/* this set rules the features section behavior */
+
+.features_card{
+  margin: 10px;
+}
+
+.features_card h5{
+  font-weight:bold;
+  font-size: 1.5rem;
+}
+
+.features_container{
+  display: flex;
 }

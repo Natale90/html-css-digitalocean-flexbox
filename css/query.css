@@ -56,7 +56,6 @@
 
   nav .ham{
     display:block;
-
   }
 
   nav ul{
@@ -64,6 +63,9 @@
   }
 
 
-  /* customer section query */
+  /* featurees section query */
+  #features .features_container{
+    display: block;
+  }
 
-  
+}
